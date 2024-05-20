@@ -1,3 +1,4 @@
+import 'package:diu_question_bank/Screen/home_activity.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,21 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'DIU Question Bank',
       theme: ThemeData(
       ),
-      home: const MyHomePage(title: 'DIU Question Bank'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget{
-  const MyHomePage({required String title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("Diu question Bank"),
+      home: const MyHomePage(title: "DIU Question Bank",),
     );
   }
 }
