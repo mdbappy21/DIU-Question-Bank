@@ -1,4 +1,5 @@
 import 'package:diu_question_bank/Screen/home_activity.dart';
+import 'package:diu_question_bank/Screen/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'DIU Question Bank',
       theme: ThemeData(
       ),
-      home: const MyHomePage(title: "DIU Question Bank",),
+     // home: const MyHomePage(title: "DIU Question Bank",),
+      home: const  Login()
     );
   }
 }

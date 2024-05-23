@@ -1,3 +1,9 @@
+import 'package:diu_question_bank/Screen/developer_details.dart';
+import 'package:diu_question_bank/Screen/home_activity.dart';
+import 'package:diu_question_bank/Screen/question_solve.dart';
+import 'package:diu_question_bank/Screen/settings.dart';
+import 'package:diu_question_bank/Screen/upload_question.dart';
+import 'package:diu_question_bank/Widgets/navigation.dart';
 import 'package:flutter/material.dart';
 import 'snack_bar.dart';
 
@@ -31,42 +37,42 @@ class AppDrawer extends StatelessWidget {
               title: Text("Home",style: TextStyle(color: Colors.black)),
               leading: Icon(Icons.home,color: Colors.black,),
               onTap: () {
-                snackBar.mySnackBar("This is home", context, duration: 2000);
+                newScreenNevigation.navigationAllRemove(context, MyHomePage(title: 'Question Bank',));
               },
             ),
             ListTile(
               title: Text("Question",style: TextStyle(color: Colors.black)),
               leading: Icon(Icons.question_answer,color: Colors.black,),
               onTap: () {
-                snackBar.mySnackBar("This is contact", context, duration: 2000);
+                newScreenNevigation.navigateToNextScreen(context, MyHomePage(title: "Question Bank",));
               },
             ),
             ListTile(
               title: Text("Upload",style: TextStyle(color: Colors.black)),
               leading: Icon(Icons.upload,color: Colors.black,),
               onTap: () {
-                snackBar.mySnackBar("This is email", context, duration: 2000);
+                newScreenNevigation.navigateToNextScreen(context, upload());
               },
             ),
             ListTile(
               title: Text("Solve",style: TextStyle(color: Colors.black)),
               leading: Icon(Icons.question_answer,color: Colors.black,),
               onTap: () {
-                snackBar.mySnackBar("This is Phone", context, duration: 2000);
+                newScreenNevigation.navigateToNextScreen(context, solve());
               },
             ),
             ListTile(
               title: Text("Settings",style: TextStyle(color: Colors.black)),
               leading: Icon(Icons.settings,color: Colors.black,),
               onTap: () {
-                snackBar.mySnackBar("This is Phone", context, duration: 2000);
+                newScreenNevigation.navigateToNextScreen(context, settings());
               },
             ),
             ListTile(
               title: Text("Developer Details",style: TextStyle(color: Colors.black),),
               leading: Icon(Icons.details,color: Colors.black,),
               onTap: () {
-                snackBar.mySnackBar("This is Phone", context, duration: 2000);
+                newScreenNevigation.navigateToNextScreen(context, developerDetails());
               },
             ),
           ],

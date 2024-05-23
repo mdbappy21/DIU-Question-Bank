@@ -15,7 +15,7 @@ class upload extends StatelessWidget {
       appBar: appBar(
         title: 'Upload Question',
       ),
-      bottomNavigationBar: bottomNavigationBar(currentIndex: 1,),
+      bottomNavigationBar: bottomNavigationBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [

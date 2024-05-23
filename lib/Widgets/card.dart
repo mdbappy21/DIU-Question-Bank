@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class card extends StatelessWidget {
-  final courseTitle;
-  final semester;
-  final year;
-  final exam;
+  final String courseTitle;
+  final String semester;
+  final String year;
+  final String exam;
 
   const card(
-      {super.key, this.courseTitle, this.semester, this.year, this.exam});
+      {super.key, required this.courseTitle, required this.semester, required this.year, required this.exam});
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +18,11 @@ class card extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Column(
+            Column(
               children: [
                 SizedBox(
                   child: Text(
-                    "6th",
+                    "$semester",
                     style: TextStyle(fontSize: 40),
                   ),
                 ),

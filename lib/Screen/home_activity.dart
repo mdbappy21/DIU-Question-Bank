@@ -20,9 +20,11 @@ class MyHomePage extends StatelessWidget {
       bottomNavigationBar: bottomNavigationBar(),
       body: const SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center, 
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            SizedBox(height: 20,),
+            SearchBox(placeholder: "Search your Question", hint: "Algorithm",prefixIcon: Icon(Icons.search),),
             card(courseTitle: "System Analysis and Design",semester: "6th",year: "Spring-2024",exam: "Final",),
             card(courseTitle: "Introduction to data Science",semester: "6th",year: "Spring-2024",exam: "Final",),
             card(courseTitle: "	Financial and Managerial Accounting",semester: "6th",year: "Spring-2024",exam: "Final",),
